@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background: linear-gradient(to left, #fd03bf, #06f1f1);
+}
+
+header {
+  margin: 10px 550px;
+  padding: 30px 20px 10px 20px;
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  color: var(--white);
+  padding-top: 15px;
+  text-align: center;
+}
+
+.calculator {
+  background-color: #f2f2f2;
+  padding: 20px;
+  max-width: 400px;
+  margin: 0 auto;
+  border: solid 1px #ccc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  margin-top: 40px;
+}
+
+#result {
+  width: 100%;
+  padding: 10px;
+  font-size: 24px;
+  border: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3) inset;
+  border-radius: 5px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px;
+  font-size: 24px;
+  border: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.clear {
+  background-color: #ff4136;
+  color: #fff;
+}
+
+.clear:hover {
+  background-color: #bd0900;
+}
+
+.number,
+.decimal {
+  background-color: #fff;
+  color: #333;
+}
+
+.number:hover,
+.decimal:hover {
+  background-color: #06f1f1;
+}
+.operator {
+  background-color: #0074d9;
+  color: #fff;
+}
+
+.operator:hover {
+  background-color: #0508f0;
+}
+
+.equals {
+  background-color: #01ff70;
+  grid-row: span 3;
+  color: #fff;
+}
+
+.equals:hover {
+  background-color: #018a1e;
+}
